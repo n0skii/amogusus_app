@@ -5,9 +5,11 @@ from random import randint
 
 
 class Case(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=10)
     case_hash = models.DecimalField(
-        default=randint(0, 100000), max_digits=10000, decimal_places=0
+        default=randint(0, 10000),
+        max_digits=100,
+        decimal_places=0,
     )
 
     def get_absolute_url(self):

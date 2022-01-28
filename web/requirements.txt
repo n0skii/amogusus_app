@@ -10,3 +10,5 @@ platformdirs==2.4.1
 sqlparse==0.4.2
 tomli==1.2.3
 typing-extensions==4.0.1
+psycopg2-binary>=2.8
+gunicorn==19.9.0
